@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;  
+    background-color: white;
+   
+}
+
+   
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5f0ec9c;  
+    width: 100%;
+    top: 0;
+    height: 82px;
+    
+}
+
+#head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    gap: 50px;
+    list-style: none;
+    position: relative;
+    font-family: 'Roboto',
+
+}
+
+#head a {
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    display: flex;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#head a :hover {
+    color: blue;
+}
+.prime-ma {
+    background: black;
+    width: 100%;
+    height: auto;
+box-sizing: border-box;
+    opacity: 83%;
+}
+.imbc {
+    position: absolute;
+  
+}
+.prime-ma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prime {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+.company-folo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    /* position: relative; */
+    /* font-family: 'Roboto'; */
+    
+}
+.company-folo p {
+    width: 90%;
+
+}
+.company-folo h1 {
+    font-family:'Roboto' ;
+}
+
+.prime-main {
+   width: 100%;
+    background: #000;
+    box-sizing: border-box;
+    opacity: 35%;
+}
+span{
+    color:black;
+    font-weight: 400px;
+
+    font-size: 19px;
+}
+.products{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    font-family: 'Roboto';
+  
+}
+
+#naci {
+    border-radius: 10px;
+    width: 100%;
+}
+
+#whata{
+   width: 52px;
+   height: 52px;
+   position: absolute;
+   left: 658px;;
+
+ }
+ .whatsapp-button {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: #25d366;
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+ }
+ 
+ .whatsapp-button:hover {
+    background: #128c7e;
+ }
+ 
+
+#img {
+    width: 738px;
+    height: 400px;
+    border-radius: 30px; 
+   
+}
+.warp {
+   width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+     padding: 20px;
+    gap: 21px;
+    /* margin-top: 61px; */
+}
+
+#alon{
+    width: 722px;
+    height: 399px
+}
+
+.soaps-detail {
+    width: 719px;
+    position: relative;   
+}
+.wrapper-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.wrapper-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+ .soaps-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+ 
+#sidebar {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 20px;
+    width: 350px;
+    margin-top: 60px;
+   background: rgba(38, 105, 131, 0.705);
+   transform: translateX(-450px);
+   transition: transfrom 450ms ease-in-out;
+transition: all 0.3s;
+   transition-delay: 0.4s;
+   display: none;
+   background-attachment: fixed;
+   z-index: 2;
+   
+}
+#opensidebar:checked ~ #sidebar {
+    transform: translateX(0);
+
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    color: rgb(20, 19, 22);
+    border-bottom: 1px solid rgb(250, 250, 250 0.10);
+   
+}
+.menu li a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    z-index: 3;
+}
+
+.icontoggle{
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    cursor: pointer; 
+    z-index: 2;
+    display: none; 
+}
+.spinner {
+    height: 5px;
+    background:rgba(114, 179, 179, 0.973);
+    transition: all  0.2s;
+    border-radius: 12px;    
+}
+.spinner.middle ,
+.spinner.bottom {
+margin-top: 5px;
+}
+#opensidebar{
+   width: 22px;
+   height: 22px;
+   position: absolute;
+   top: 12px;
+   left: 10px;
+}
+
+#opensidebar:checked ~.icontoggle > .spinner.middle {
+    opacity: 0;
+}
+#opensidebar:checked ~.icontoggle > .spinner.top {
+   transform: rotate(135deg);
+   margin-top: 8px;
+}
+#opensidebar:checked ~.icontoggle > .spinner.bottom {
+    transform: rotate(-135deg);
+    margin-top: -9px;
+ }
+ #opensidebar {
+    display: none;
+ }
+
+ .footer {
+    background: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+    
+}
+.fot-txt {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+   right: 0;
+   bottom: 48px;
+    margin-left: 57px;
+}
+.fot-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: 31px;
+}
+.bounce :hover {
+
+    animation: bounce 0.5s ease-in-out;
+}
+
+
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+#imbcc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloder{
+    background: #000000ee  url(/loading-92.gif) no-repeat center;;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+   background-size: 15%;
+    z-index: 500;
+    top: 0px;
+} 
+
+
+
+@media only screen and (max-width: 425px) {
+   body {
+    width: 425px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: white
+   }
+   #head{
+    display: none;
+   }
+   #imbcc{
+    position: absolute;
+    top: -176px;
+    width: 90px;
+    height: 60px;
+    left: 162px;
+}
+
+  .imbc{
+    left: 0;
+  }
+  .warp{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: auto;
+    padding: 0;
+    position: relative;
+    left: 17px;
+  }
+  .wrapper-2{
+    width: 375px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+    left: 17px;
+  }
+ .prime-main{
+    width: 375px;
+    height: auto;
+
+ }
+ #naci{
+    width: 423px;
+    /* height: auto; */
+    padding: 0;
+ }
+ #alon{
+    width: 375px;
+    height: auto;
+    padding: 0;
+
+ }
+ .soaps-detail{
+    width: 375px;
+    height: auto;
+    padding: 0;
+ }
+ .footer{
+    width: 421px;
+    height: auto;
+    margin: 0;
+ }
+
+ .fot-txt {
+    font-size: 7px;
+    top: -6px
+ }
+ .whatsapp-button{
+left: 0;
+ }
+ .company-folo{
+    padding: 0;
+ }
+ #fot-img{
+    width: 30px;
+    height: 30px;
+ }
+    
+}
