@@ -167,12 +167,12 @@ span{
 }
 
 #alon{
-    width: 722px;
-    height: 399px
+    width: 628px;
+    height: 374px;
 }
 
 .soaps-detail {
-    width: 719px;
+    /* width: 719px; */
     position: relative;   
 }
 .wrapper-1 {
@@ -351,9 +351,9 @@ margin-top: 5px;
 
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
    body {
-    width: 425px;
+    min-width: 475px;
     height: auto;
     margin: 0;
     padding: 0;
@@ -363,11 +363,18 @@ margin-top: 5px;
     display: none;
    }
    #imbcc{
-    position: absolute;
-    top: -176px;
     width: 90px;
     height: 60px;
+    position: absolute;
+    height: 60px;
     left: 162px;
+}
+.prime-ma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* min-width:475px; */
+    height: auto;
 }
 
   .imbc{
@@ -376,47 +383,59 @@ margin-top: 5px;
   .warp{
     display: flex;
     flex-direction: column;
-    width: 340px;
+    justify-content: center;
+    align-items: center;
+    min-width: 470px;
     height: auto;
     padding: 0;
-    position: relative;
-    left: 17px;
+    box-sizing: border-box;
+    /* position: relative;
+    left: 17px; */
   }
   .wrapper-2{
-    width: 375px;
+    min-width: 475px;
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0;
-    position: relative;
-    left: 17px;
+    box-sizing: border-box;
+    /* position: relative;
+    left: 17px; */
   }
  .prime-main{
-    width: 425px;
+    width: 100%;
     height: auto;
 
  }
  #naci{
-    width: 423px;
+    width: 100%;
     /* height: auto; */
     padding: 0;
  }
  #alon{
-    width: 375px;
+    width: 336px;
     height: auto;
     padding: 0;
+    box-sizing: border-box;
 
  }
  .soaps-detail{
-    width: 375px;
+    width: 390px;
     height: auto;
     padding: 0;
+    margin-bottom: 20px;
  }
  .footer{
-    width: 421px;
+   max-width: 600px;
     height: auto;
     margin: 0;
  }
+.prime{
+    width: 100%;
+    height: auto;
+}
 
  .fot-txt {
     font-size: 7px;
@@ -427,10 +446,30 @@ left: 0;
  }
  .company-folo{
     padding: 0;
+    width: 471px;
  }
  #fot-img{
     width: 30px;
     height: 30px;
  }
-    
+ .icontoggle{
+    display: block;
+    z-index: 2;
+ }
+ #sidebar {
+    display: block;
+    position: absolute;
+    z-index: 2;
+ }
+ .header{
+   max-width: 600px;
+    height: auto;
+ }
+
+ .wrap-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
 }
